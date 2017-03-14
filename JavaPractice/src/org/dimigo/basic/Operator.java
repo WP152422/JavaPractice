@@ -25,6 +25,7 @@ public class Operator {
 		int employees = 3;
 		int store = 1500;
 		
+		
 		System.out.println("<<디미베네 연간 인건비>>");
 		System.out.println("월 평균 급여 : " + String.format("%,d", monthAverageSalary) +"원");
 		System.out.println("점포 내 직원수 : " + employees + "명");
