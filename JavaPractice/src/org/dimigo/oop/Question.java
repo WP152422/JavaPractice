@@ -31,9 +31,10 @@ public class Question {
 			System.out.println((answer[i].equals(scanner.nextLine())) ? "정답입니다!" : "틀렸습니다!");
 		}
 		System.out.println("<<결과 출력>>");
-		StringBuilder print;
+		StringBuilder print = new StringBuilder();;
 		for (int i = 0; i < 3; i++) {
-			print = new StringBuilder(question[i]);
+			print.delete(0, print.length());
+			print.append(question[i]);
 			print.append(" ").append(answer[i]).append("입니다.");
 			System.out.println(print);
 		}
