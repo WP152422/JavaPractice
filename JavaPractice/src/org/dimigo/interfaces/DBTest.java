@@ -21,10 +21,11 @@ public class DBTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
 		System.out.println("<변경 전>");
-		crud(IDBManager.getDBObject("SYBASE"));
+		crud(IDBManager.getDBObject(IDBManager.SYBASE_DATABASE));
 		System.out.println("\n<변경 후>");
-		crud(IDBManager.getDBObject("ORACLE"));
+		crud(IDBManager.getDBObject(IDBManager.ORACLE_DATABASE));
 
 	}
 	
